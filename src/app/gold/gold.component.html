@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col">
+    <form (submit)="farmGold($event)">
+      <h1>Farm</h1>
+      <p>Earn 2-5 Gold</p>
+      <input (click)="callParent()" type="submit" value="Farm" name="farm">
+    </form>
+  </div>
+
+
+  <div class="col">
+    <form (submit)="caveGold($event)">
+      <h1>Cave</h1>
+      <p>Earn 5-10 Gold</p>
+      <input (click)="callParent()" type="submit" value="Farm">
+    </form>
+  </div>
+  <div class="col">
+    <form (submit)="casinoGold($event)">
+      <h1>Casino</h1>
+      <p>Earn up to or Lose up to 100 Gold</p>
+      <input (click)="callParent()" type="submit" value="Farm">
+    </form>
+  </div>
+  <div class="col">
+    <form (submit)="houseGold($event)">
+      <h1>House</h1>
+      <p>Earn 7-15 Gold</p>
+      <input (click)="callParent()" type="submit" value="Farm">
+    </form>
+  </div>
+</div>
+<div clas="row">
+  <div class="col"></div>
+</div>
+<div class="row">
+    <div class="col">
+      <ul>
+        <li *ngFor="let comment of comments">
+          <h3>{{ comment }}</h3>
+        </li>
+      </ul>
+  </div>
+</div>
